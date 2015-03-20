@@ -36,6 +36,26 @@ public class Order {
         return pizzas;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setPizzas(List<Pizza> pizzas) {
+        this.pizzas = pizzas;
+    }
+
     public void addItems(Pizza... pizzaList) {
         for (Pizza pizza : pizzaList) {
             pizzas.add(pizza);
@@ -45,7 +65,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "ua.epam.rd.domain.Order\n {" +
+        return "Order\n {" +
                 "id=" + id +
                 ",\n date=" + date +
                 ",\n name='" + name + '\'' +

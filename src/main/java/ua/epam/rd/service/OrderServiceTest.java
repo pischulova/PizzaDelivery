@@ -26,7 +26,7 @@ public class OrderServiceTest implements OrderService {
     public Order createOrder() {
         int newOrderId = repository.getNewOrderId();
         Date date = new Date();
-        return new Order(newOrderId, date);
+        return new Order(newOrderId, date); // избавиться от этой строки
     }
 
     @Override

@@ -25,10 +25,6 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "ua.epam.rd.domain.Pizza{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", pizzaType=" + pizzaType +
-                '}';
+        return "Pizza { " + name + ", price=" + price + ", " + pizzaType + '}';
     }
 }

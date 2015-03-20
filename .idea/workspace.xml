@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bab32ec-2767-473d-bcb9-5b53612c6a1a" name="Default" comment="" />
+    <list default="true" id="4bab32ec-2767-473d-bcb9-5b53612c6a1a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/epam/rd/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/rd/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PizzaDelivery.iml" afterPath="$PROJECT_DIR$/PizzaDelivery.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="PizzaDelivery.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,10 +74,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.318569" vertical-offset="0" max-vertical-offset="595">
+            <state line="28" column="57" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="31" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+              <folding>
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pizza.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -76,28 +114,34 @@
       <file leaf-file-name="SpringConfig.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/SpringConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="578">
-              <folding />
+            <state line="15" column="53" selection-start="819" selection-end="819" vertical-scroll-proportion="-5.96" vertical-offset="106" max-vertical-offset="1003">
+              <folding>
+                <marker date="1426866162142" expanded="true" signature="1620:1845" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="OrderServiceTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="1" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="714">
-              <folding />
+            <state line="28" column="72" selection-start="741" selection-end="741" vertical-scroll-proportion="0.66735536" vertical-offset="153" max-vertical-offset="714">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/OrderRepositoryTest.java">
+      <file leaf-file-name="PizzaRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="952">
+            <state line="21" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#574#581#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#1022#1029#0" expanded="true" />
+                <element signature="e#1258#1265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,6 +153,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -126,9 +173,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/OrderServiceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java" />
       </list>
     </option>
   </component>
@@ -145,7 +195,7 @@
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -366,6 +416,9 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../E-Shop" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -615,17 +668,34 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4bab32ec-2767-473d-bcb9-5b53612c6a1a" name="Default" comment="" />
       <created>1426855225571</created>
       <updated>1426855225571</updated>
-      <workItem from="1426855227905" duration="8732000" />
+      <workItem from="1426855227905" duration="12254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8732000" />
+    <option name="totallyTimeSpent" value="12254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -651,8 +721,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19469696" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2137031" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26363635" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1680261" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -684,20 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="26" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.62350935" vertical-offset="59" max-vertical-offset="663">
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,45 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="198" selection-end="198" vertical-scroll-proportion="0.26493508" vertical-offset="0" max-vertical-offset="850">
-          <folding>
-            <element signature="e#911#918#0" expanded="true" />
-            <element signature="e#1147#1154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="32" selection-start="680" selection-end="680" vertical-scroll-proportion="0.67105263" vertical-offset="0" max-vertical-offset="510">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="187" selection-end="187" vertical-scroll-proportion="0.26064736" vertical-offset="0" max-vertical-offset="1054">
-          <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,20 +809,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SpringConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.318569" vertical-offset="0" max-vertical-offset="595">
+        <state line="28" column="57" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Pizza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="31" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/repository/PizzaRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
+          <folding>
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#1022#1029#0" expanded="true" />
+            <element signature="e#1258#1265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SpringConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="53" selection-start="819" selection-end="819" vertical-scroll-proportion="-5.96" vertical-offset="106" max-vertical-offset="1003">
+          <folding>
+            <marker date="1426866162142" expanded="true" signature="1620:1845" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/epam/rd/service/OrderServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="72" selection-start="741" selection-end="741" vertical-scroll-proportion="0.66735536" vertical-offset="153" max-vertical-offset="714">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>algs4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|PizzaDelivery</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

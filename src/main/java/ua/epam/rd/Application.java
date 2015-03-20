@@ -3,7 +3,6 @@ package ua.epam.rd;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.epam.rd.domain.*;
-import ua.epam.rd.repository.*;
 import ua.epam.rd.service.*;
 
 import java.util.List;
@@ -15,10 +14,9 @@ public class Application {
         ApplicationContext appContext = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
         PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceTest.class);
-
         List<Pizza> pizzaList = pizzaService.getAllPizzas();
 
-        OrderService orderService = new OrderServiceTest(new OrderRepositoryTest());
+        OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceTest.class);
 
         Order order1 = orderService.createOrder();
         order1.addItems(pizzaList.get(0), pizzaList.get(2));

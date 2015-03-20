@@ -10,11 +10,15 @@ public class PizzaRepositoryTest implements PizzaRepository {
 
     public PizzaRepositoryTest() {
         repository = new ArrayList<Pizza>();
-        repository.add(new Pizza("A", 50, PizzaType.VEGETARIAN));
-        repository.add(new Pizza("B", 60, PizzaType.VEGETARIAN));
-        repository.add(new Pizza("C", 70, PizzaType.MEAT));
-        repository.add(new Pizza("D", 80, PizzaType.SEA));
-        repository.add(new Pizza("E", 90, PizzaType.SEA));
+//        repository.add(new Pizza("A", 50, PizzaType.VEGETARIAN));
+//        repository.add(new Pizza("B", 60, PizzaType.VEGETARIAN));
+//        repository.add(new Pizza("C", 70, PizzaType.MEAT));
+//        repository.add(new Pizza("D", 80, PizzaType.SEA));
+//        repository.add(new Pizza("E", 90, PizzaType.SEA));
+    }
+
+    public void setRepository(List<Pizza> repository) {
+        this.repository = repository;
     }
 
     @Override
