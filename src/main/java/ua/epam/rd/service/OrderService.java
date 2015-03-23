@@ -7,6 +7,6 @@ import java.util.List;
 public interface OrderService {
     List<Order> getAllOrders();
     Order getOrderById(int id);
-    Order createOrder();
+    Order createNewOrder();
     boolean placeOrder(Order order);
 }

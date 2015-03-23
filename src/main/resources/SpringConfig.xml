@@ -42,12 +42,10 @@
         <constructor-arg ref="pizzaRepositoryTest"/>
     </bean>
 
-    <bean name="orderServiceTest" class="ua.epam.rd.service.OrderServiceTest">
-        <constructor-arg ref="orderRepositoryTest"/>
+    <bean id="orderServiceTest" class="ua.epam.rd.service.OrderServiceTest">
+        <lookup-method name="createOrder" bean="order"/>
     </bean>
 
-
-
-
+    <bean id="order" class="ua.epam.rd.domain.Order" scope="prototype"/>
 
 </beans>

@@ -9,6 +9,9 @@ public class Order {
     public int price;
     public List<Pizza> pizzas;
 
+    public Order() {
+    }
+
     public Order(int id, Date date) {
         this.id = id;
         this.date = date;

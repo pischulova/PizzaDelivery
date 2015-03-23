@@ -5,7 +5,7 @@ import ua.epam.rd.domain.Order;
 
 import java.util.*;
 
-public class OrderServiceTest implements OrderService {
+public abstract class OrderServiceTest implements OrderService {
     private OrderRepository repository;
 
     public OrderServiceTest(OrderRepository repository) {
@@ -23,14 +23,19 @@ public class OrderServiceTest implements OrderService {
     }
 
     @Override
-    public Order createOrder() {
+    public Order createNewOrder() {
         int newOrderId = repository.getNewOrderId();
         Date date = new Date();
-        return new Order(newOrderId, date); // избавиться от этой строки
+        Order order = createOrder();
+        order.setDate(date);
+        order.setId(newOrderId);
+        return order;
     }
 
     @Override
     public boolean placeOrder(Order order) {
         return repository.addOrder(order);
     }
+
+    protected abstract Order createOrder();
 }
