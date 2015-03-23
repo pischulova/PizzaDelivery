@@ -7,7 +7,7 @@ public class Order {
     public Date date;
     public String name;
     public int price;
-    public List<Pizza> pizzas;
+    public List<Pizza> pizzas = new ArrayList<Pizza>();
 
     public Order() {
     }
@@ -16,7 +16,6 @@ public class Order {
         this.id = id;
         this.date = date;
         this.name = id + date.toString();
-        pizzas = new ArrayList<Pizza>();
     }
 
     public int getId() {
