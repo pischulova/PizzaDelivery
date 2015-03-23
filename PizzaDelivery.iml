@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/SpringConfig.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/RepositConfig.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -28,3 +29,4 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
   </component>
 </module>
+

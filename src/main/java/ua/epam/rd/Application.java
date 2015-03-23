@@ -10,8 +10,8 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) {
-
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("SpringConfig.xml");
+        ApplicationContext repositContext = new ClassPathXmlApplicationContext("RepositConfig.xml");
+        ApplicationContext appContext = new ClassPathXmlApplicationContext(new String[]{"SpringConfig.xml"}, repositContext);
 
         PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceTest.class);
         List<Pizza> pizzaList = pizzaService.getAllPizzas();
