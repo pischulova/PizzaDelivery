@@ -1,5 +1,6 @@
 package ua.epam.rd.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import ua.epam.rd.domain.Order;
 import ua.epam.rd.repository.OrderRepository;
 
@@ -10,6 +11,7 @@ import java.util.List;
 public abstract class OrderServiceTest implements OrderService {
     private OrderRepository repository;
 
+    @Autowired
     public OrderServiceTest(OrderRepository repository) {
         this.repository = repository;
     }

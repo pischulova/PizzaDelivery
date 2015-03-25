@@ -1,18 +1,24 @@
 package ua.epam.rd.repository;
 
+import org.springframework.stereotype.Repository;
 import ua.epam.rd.domain.Order;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
+@Repository
 public class OrderRepositoryTest implements OrderRepository{
     public List<Order> repository;
+    public int count;
 
     public OrderRepositoryTest() {
         repository = new ArrayList<Order>();
+        count = 0;
     }
 
     @Override
     public boolean addOrder(Order order) {
+        count++;
         return repository.add(order);
     }
 
@@ -43,8 +49,6 @@ public class OrderRepositoryTest implements OrderRepository{
 
     @Override
     public int getNewOrderId() {
-        return repository.size();
+        return count;
     }
-
-
 }

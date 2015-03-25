@@ -12,23 +12,23 @@
 
     <bean name="pizzaRepositoryTest" class="ua.epam.rd.repository.PizzaRepositoryTest">
         <property name="repository">
-            <list value-type="ua.epam.rd.domain.Pizza">
-                <bean name="pizza1" class="ua.epam.rd.domain.Pizza">
+            <list>
+                <bean class="ua.epam.rd.domain.Pizza">
                     <constructor-arg value="Alaska"/>
                     <constructor-arg value="100"/>
                     <constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>
                 </bean>
-                <bean name="pizza2" class="ua.epam.rd.domain.Pizza">
+                <bean class="ua.epam.rd.domain.Pizza">
                     <constructor-arg value="Texas"/>
                     <constructor-arg value="130"/>
                     <constructor-arg type="ua.epam.rd.domain.PizzaType" value="SEA"/>
                 </bean>
-                <bean name="pizza3" class="ua.epam.rd.domain.Pizza">
+                <bean class="ua.epam.rd.domain.Pizza">
                     <constructor-arg value="California"/>
                     <constructor-arg value="120"/>
                     <constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>
                 </bean>
-                <bean name="pizza4" class="ua.epam.rd.domain.Pizza">
+                <bean class="ua.epam.rd.domain.Pizza">
                     <constructor-arg value="Washington"/>
                     <constructor-arg value="80"/>
                     <constructor-arg type="ua.epam.rd.domain.PizzaType" value="VEGETARIAN"/>
@@ -37,6 +37,6 @@
         </property>
     </bean>
 
-    <bean name="orderRepositoryTest" class="ua.epam.rd.repository.OrderRepositoryTest"/>
-
+    <!--<bean name="orderRepositoryTest" class="ua.epam.rd.repository.OrderRepositoryTest"/>-->
+<!---->
 </beans>
