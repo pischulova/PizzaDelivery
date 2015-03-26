@@ -1,11 +1,12 @@
 package ua.epam.rd.domain;
 
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
-@Component("order")
+@OrderAnnotation
 @Scope(value = "prototype")
 public class Order {
     public int id;
