@@ -17,8 +17,9 @@ public class PizzaRepositoryTest implements PizzaRepository {
     }
 
     @Override
-    public void addPizza(Pizza pizza) {
+    public Long savePizza(Pizza pizza) {
         repository.add(pizza);
+        return 0L;
     }
 
     @Override

@@ -2,8 +2,12 @@ package ua.epam.rd;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ua.epam.rd.domain.*;
-import ua.epam.rd.service.*;
+import ua.epam.rd.domain.Order;
+import ua.epam.rd.domain.Pizza;
+import ua.epam.rd.service.OrderService;
+import ua.epam.rd.service.OrderServiceTest;
+import ua.epam.rd.service.PizzaService;
+import ua.epam.rd.service.PizzaServiceTest;
 
 import java.util.List;
 
@@ -28,6 +32,22 @@ public class Application {
 
         List<Order> orders = orderService.getAllOrders();
         System.out.println(orders);
+
+        String[] s1 = appContext.getBeanDefinitionNames();
+        String[] s2 = repositContext.getBeanDefinitionNames();
+
+        System.out.println("-------parent context--------");
+
+        for (String s : s2) {
+            System.out.println(s);
+        }
+
+        System.out.println("-------child context--------");
+
+        for(String s : s1) {
+            System.out.println(s);
+        }
+
     }
 
 }

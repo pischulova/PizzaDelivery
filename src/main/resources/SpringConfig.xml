@@ -11,16 +11,11 @@
 
     <context:component-scan base-package="ua.epam.rd">
         <context:include-filter type="annotation" expression="ua.epam.rd.domain.OrderAnnotation"/>
+        <context:exclude-filter type="regex" expression=".*Repository.*"/>
     </context:component-scan>
-
-    <!--<bean name="pizzaServiceTest" class="ua.epam.rd.service.PizzaServiceTest">-->
-        <!--<constructor-arg ref="pizzaRepositoryTest"/>-->
-    <!--</bean>-->
 
     <bean id="orderServiceTest" class="ua.epam.rd.service.OrderServiceTest">
         <lookup-method name="createOrder" bean="order"/>
     </bean>
-
-    <!--<bean id="order" class="ua.epam.rd.domain.Order" scope="prototype"/>-->
 
 </beans>

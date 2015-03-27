@@ -12,6 +12,7 @@
       <entry name="!?*.flex" />
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="false">
@@ -25,6 +26,8 @@
         <module name="PizzaDelivery" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="PizzaDelivery" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
