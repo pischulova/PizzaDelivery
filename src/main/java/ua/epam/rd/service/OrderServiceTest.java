@@ -1,18 +1,20 @@
 package ua.epam.rd.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Lookup;
+import org.springframework.stereotype.Service;
 import ua.epam.rd.domain.Order;
 import ua.epam.rd.repository.OrderRepository;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-public abstract class OrderServiceTest implements OrderService {
+@Service("orderServiceTest")
+public class OrderServiceTest implements OrderService {
     private OrderRepository repository;
 
     @Autowired
-    public OrderServiceTest(OrderRepository repository) {
+    public OrderServiceTest(OrderRepository orderRepository) {
         this.repository = repository;
     }
 
@@ -25,6 +27,7 @@ public abstract class OrderServiceTest implements OrderService {
     public Order getOrderById(int id) {
         return repository.getOrderById(id);
     }
+
 
     @Override
     public Order createNewOrder() {
@@ -42,5 +45,8 @@ public abstract class OrderServiceTest implements OrderService {
         return repository.addOrder(order);
     }
 
-    protected abstract Order createOrder();
+    @Lookup("order")
+    protected Order createOrder(){
+        return null;
+    }
 }

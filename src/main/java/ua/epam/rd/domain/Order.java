@@ -9,19 +9,14 @@ import java.util.List;
 @OrderAnnotation
 @Scope(value = "prototype")
 public class Order {
-    public int id;
-    public Date date;
-    public String name;
-    public int price;
-    public List<Pizza> pizzas = new ArrayList<Pizza>();
+    private int id;
+    private Date date;
+    private String name;
+    private int price;
+    private List<Pizza> pizzas = new ArrayList<Pizza>();
+    private OrderStatus orderStatus;
 
     public Order() {
-    }
-
-    public Order(int id, Date date) {
-        this.id = id;
-        this.date = date;
-        this.name = id + date.toString();
     }
 
     public int getId() {
@@ -44,6 +39,8 @@ public class Order {
         return pizzas;
     }
 
+    public OrderStatus getOrderStatus() { return orderStatus; }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -60,6 +57,10 @@ public class Order {
 
     public void setPizzas(List<Pizza> pizzas) {
         this.pizzas = pizzas;
+    }
+
+    public void setOrderStatus(OrderStatus orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public void addItems(Pizza... pizzaList) {

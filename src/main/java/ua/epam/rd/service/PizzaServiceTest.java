@@ -7,22 +7,22 @@ import ua.epam.rd.domain.PizzaType;
 import ua.epam.rd.domain.Pizza;
 
 import java.util.List;
-@Service
+@Service("pizzaServiceTest")
 public class PizzaServiceTest implements PizzaService {
-    private PizzaRepository repository;
+    private PizzaRepository pizzaRepository;
 
     @Autowired
-    public PizzaServiceTest(PizzaRepository repository) {
-        this.repository = repository;
+    public PizzaServiceTest(PizzaRepository pizzaRepository) {
+        this.pizzaRepository = pizzaRepository;
     }
 
     @Override
     public List<Pizza> getAllPizzas() {
-        return repository.getAllPizzas();
+        return pizzaRepository.getAllPizzas();
     }
 
     @Override
     public List<Pizza> getPizzaByType(PizzaType type) {
-        return repository.getPizzasByType(type);
+        return pizzaRepository.getPizzasByType(type);
     }
 }

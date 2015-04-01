@@ -1,43 +1,43 @@
 package ua.epam.rd.repository;
 
+import org.hibernate.annotations.NamedQuery;
 import org.springframework.stereotype.Repository;
-import ua.epam.rd.domain.Pizza;
-import ua.epam.rd.domain.PizzaType;
+import ua.epam.rd.domain.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
+import javax.persistence.*;
 import javax.transaction.Transactional;
 import java.util.List;
-
 @Repository("pizzaRepository")
 public class JPAPizzaRepository implements PizzaRepository {
-    EntityManagerFactory emf;
+    static final String FIND_ALL_PIZZAS = "SELECT p FROM Pizza p";
+    static final String FIND_PIZZAS_BY_TYPE = "SELECT p FROM Pizza p WHERE p.pizzaType = ?1";
 
-    public JPAPizzaRepository(EntityManagerFactory emf) {
-        this.emf = emf;
-    }
+    @PersistenceContext(name = "unit1")
+    private EntityManager em;
 
     @Transactional
     @Override
     public Long savePizza(Pizza pizza) {
-        EntityManager em = emf.createEntityManager();
         em.persist(pizza);
-        em.close();
         return pizza.getId();
     }
 
     @Override
     public boolean deletePizza(Pizza pizza) {
+        em.remove(pizza);
         return false;
     }
 
     @Override
     public List<Pizza> getAllPizzas() {
-        return null;
+        Query query = em.createQuery(FIND_ALL_PIZZAS);
+        return query.getResultList();
     }
 
     @Override
     public List<Pizza> getPizzasByType(PizzaType type) {
-        return null;
+        Query query = em.createQuery(FIND_PIZZAS_BY_TYPE);
+        query.setParameter(1, type);
+        return query.getResultList();
     }
 }

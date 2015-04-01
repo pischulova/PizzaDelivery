@@ -14,31 +14,31 @@
         <context:include-filter type="regex" expression=".*Repository"/>
     </context:component-scan>
 
-    <bean name="pizzaRepositoryTest" class="ua.epam.rd.repository.PizzaRepositoryTest">
-        <property name="repository">
-            <list>
-                <bean class="ua.epam.rd.domain.Pizza">
-                    <constructor-arg value="Alaska"/>
-                    <constructor-arg value="100"/>
-                    <constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>
-                </bean>
-                <bean class="ua.epam.rd.domain.Pizza">
-                    <constructor-arg value="Texas"/>
-                    <constructor-arg value="130"/>
-                    <constructor-arg type="ua.epam.rd.domain.PizzaType" value="SEA"/>
-                </bean>
-                <bean class="ua.epam.rd.domain.Pizza">
-                    <constructor-arg value="California"/>
-                    <constructor-arg value="120"/>
-                    <constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>
-                </bean>
-                <bean class="ua.epam.rd.domain.Pizza">
-                    <constructor-arg value="Washington"/>
-                    <constructor-arg value="80"/>
-                    <constructor-arg type="ua.epam.rd.domain.PizzaType" value="VEGETARIAN"/>
-                </bean>
-            </list>
-        </property>
-    </bean>
+    <!--<bean name="pizzaRepositoryTest" class="ua.epam.rd.repository.PizzaRepositoryTest">-->
+        <!--<property name="repository">-->
+            <!--<list>-->
+                <!--<bean class="ua.epam.rd.domain.Pizza">-->
+                    <!--<constructor-arg value="Alaska"/>-->
+                    <!--<constructor-arg value="100"/>-->
+                    <!--<constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>-->
+                <!--</bean>-->
+                <!--<bean class="ua.epam.rd.domain.Pizza">-->
+                    <!--<constructor-arg value="Texas"/>-->
+                    <!--<constructor-arg value="130"/>-->
+                    <!--<constructor-arg type="ua.epam.rd.domain.PizzaType" value="SEA"/>-->
+                <!--</bean>-->
+                <!--<bean class="ua.epam.rd.domain.Pizza">-->
+                    <!--<constructor-arg value="California"/>-->
+                    <!--<constructor-arg value="120"/>-->
+                    <!--<constructor-arg type="ua.epam.rd.domain.PizzaType" value="MEAT"/>-->
+                <!--</bean>-->
+                <!--<bean class="ua.epam.rd.domain.Pizza">-->
+                    <!--<constructor-arg value="Washington"/>-->
+                    <!--<constructor-arg value="80"/>-->
+                    <!--<constructor-arg type="ua.epam.rd.domain.PizzaType" value="VEGETARIAN"/>-->
+                <!--</bean>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 </beans>

@@ -22,13 +22,13 @@ public class Application {
 
         OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceTest.class);
 
-        Order order1 = orderService.createNewOrder();
-        order1.addItems(pizzaList.get(0), pizzaList.get(2));
-        orderService.placeOrder(order1);
-
-        Order order2 = orderService.createNewOrder();
-        order2.addItems(pizzaList.get(1), pizzaList.get(3));
-        orderService.placeOrder(order2);
+//        Order order1 = orderService.createNewOrder();
+//        order1.addItems(pizzaList.get(0), pizzaList.get(2));
+//        orderService.placeOrder(order1);
+//
+//        Order order2 = orderService.createNewOrder();
+//        order2.addItems(pizzaList.get(1), pizzaList.get(3));
+//        orderService.placeOrder(order2);
 
         List<Order> orders = orderService.getAllOrders();
         System.out.println(orders);

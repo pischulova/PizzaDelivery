@@ -6,7 +6,6 @@ import ua.epam.rd.domain.Order;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
 public class OrderRepositoryTest implements OrderRepository{
     public List<Order> repository;
     public int count;
