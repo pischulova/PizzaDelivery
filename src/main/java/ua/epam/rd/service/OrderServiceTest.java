@@ -35,7 +35,7 @@ public class OrderServiceTest implements OrderService {
         Date date = new Date();
         Order order = createOrder();
         order.setDate(date);
-        order.setId(newOrderId);
+//        order.setId(newOrderId);
         order.setName(newOrderId + "/" + new SimpleDateFormat("dd.MM.yy").format(date));
         return order;
     }
