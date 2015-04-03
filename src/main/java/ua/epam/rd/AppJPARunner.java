@@ -29,17 +29,17 @@ public class AppJPARunner {
         PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceTest.class);
         OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceTest.class);
 
-//        PizzaRepository pizzaRepository
-//                = appContext.getBean("pizzaRepository", PizzaRepository.class);
-//
-//        Pizza pizza = new Pizza();
-//        pizza.setName("Greece");
-//        pizza.setPizzaType(PizzaType.SEA);
-//        pizza.setPrice(150);
+        Pizza pizza = new Pizza();
+        pizza.setName("Oliva");
+        pizza.setPizzaType(PizzaType.VEGETARIAN);
+        pizza.setPrice(92);
+
+        pizzaService.savePizza(pizza);
 
         List<Pizza> pizzas = pizzaService.getAllPizzas();
         System.out.println(pizzas);
-//
+
+
 //        pizzaRepository.savePizza(pizza);
 
         //Pizza newPizza = em.find(Pizza.class, pizza.getId());

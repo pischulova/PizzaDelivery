@@ -17,6 +17,11 @@ public class PizzaServiceTest implements PizzaService {
     }
 
     @Override
+    public Long savePizza(Pizza pizza) {
+        return pizzaRepository.savePizza(pizza);
+    }
+
+    @Override
     public List<Pizza> getAllPizzas() {
         return pizzaRepository.getAllPizzas();
     }
@@ -25,4 +30,21 @@ public class PizzaServiceTest implements PizzaService {
     public List<Pizza> getPizzaByType(PizzaType type) {
         return pizzaRepository.getPizzasByType(type);
     }
+
+    @Override
+    public Pizza getPizzaById(Long id) {
+        return null;
+    }
+
+    @Override
+    public boolean updatePizzaById(Long id, Pizza pizza) {
+        return false;
+    }
+
+    @Override
+    public boolean deletePizza(Pizza pizza) {
+        return false;
+    }
+
+
 }

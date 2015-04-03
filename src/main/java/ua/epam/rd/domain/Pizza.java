@@ -3,6 +3,7 @@ package ua.epam.rd.domain;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "pizzas")
 public class Pizza {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
