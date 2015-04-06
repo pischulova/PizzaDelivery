@@ -1,6 +1,7 @@
 package ua.epam.rd.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,8 +16,8 @@ public class Customer {
     @JoinColumn(name = "address_id")
     private Address address;
 
-    @OneToMany(cascade=CascadeType.PERSIST, fetch=FetchType.LAZY)
-    private List<Order> orders;
+    @OneToMany(mappedBy = "customer", cascade=CascadeType.PERSIST, fetch=FetchType.LAZY)
+    private List<Order> orders = new ArrayList<>();
 
     public Customer() {
     }
