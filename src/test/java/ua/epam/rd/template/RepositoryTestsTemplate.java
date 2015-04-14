@@ -1,4 +1,4 @@
-package ua.epam.rd.repository.template;
+package ua.epam.rd.template;
 
 import org.junit.FixMethodOrder;
 import org.junit.runner.RunWith;

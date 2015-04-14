@@ -23,12 +23,17 @@ public class JPAOrderRepository implements OrderRepository{
     }
 
     @Override
+    public boolean updateOrder(Order order) {
+        return false;
+    }
+
+    @Override
     public List<Order> getAllOrders() {
         return null;
     }
 
     @Override
-    public Order getOrderById(int id) {
+    public Order getOrderById(Long id) {
         return null;
     }
 

@@ -1,20 +1,14 @@
 package ua.epam.rd;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.epam.rd.domain.Pizza;
 import ua.epam.rd.domain.PizzaType;
-import ua.epam.rd.repository.PizzaRepository;
 import ua.epam.rd.service.OrderService;
-import ua.epam.rd.service.OrderServiceTest;
+import ua.epam.rd.service.OrderServiceSample;
 import ua.epam.rd.service.PizzaService;
-import ua.epam.rd.service.PizzaServiceTest;
+import ua.epam.rd.service.PizzaServiceSample;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import java.util.List;
 
 public class AppJPARunner {
@@ -26,8 +20,8 @@ public class AppJPARunner {
 
         ConfigurableApplicationContext appContext = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-        PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceTest.class);
-        OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceTest.class);
+        PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceSample.class);
+        OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceSample.class);
 
         Pizza pizza = new Pizza();
         pizza.setName("Oliva");

@@ -8,11 +8,11 @@ import ua.epam.rd.domain.Pizza;
 
 import java.util.List;
 @Service("pizzaServiceTest")
-public class PizzaServiceTest implements PizzaService {
+public class PizzaServiceSample implements PizzaService {
     private PizzaRepository pizzaRepository;
 
     @Autowired
-    public PizzaServiceTest(PizzaRepository pizzaRepository) {
+    public PizzaServiceSample(PizzaRepository pizzaRepository) {
         this.pizzaRepository = pizzaRepository;
     }
 

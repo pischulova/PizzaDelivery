@@ -5,10 +5,10 @@ import ua.epam.rd.domain.Pizza;
 
 import java.util.*;
 
-public class PizzaRepositoryTest implements PizzaRepository {
+public class PizzaRepositorySample implements PizzaRepository {
     public List<Pizza> repository;
 
-    public PizzaRepositoryTest() {
+    public PizzaRepositorySample() {
         repository = new ArrayList<Pizza>();
     }
 

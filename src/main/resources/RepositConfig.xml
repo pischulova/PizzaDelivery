@@ -14,7 +14,7 @@
         <context:include-filter type="regex" expression=".*Repository"/>
     </context:component-scan>
 
-    <!--<bean name="pizzaRepositoryTest" class="ua.epam.rd.repository.PizzaRepositoryTest">-->
+    <!--<bean name="pizzaRepositoryTest" class="ua.epam.rd.repository.PizzaRepositorySample">-->
         <!--<property name="repository">-->
             <!--<list>-->
                 <!--<bean class="ua.epam.rd.domain.Pizza">-->

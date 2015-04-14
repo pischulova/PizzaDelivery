@@ -1,16 +1,15 @@
 package ua.epam.rd.repository;
 
-import org.springframework.stereotype.Repository;
 import ua.epam.rd.domain.Order;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderRepositoryTest implements OrderRepository{
+public class OrderRepositorySample implements OrderRepository{
     public List<Order> repository;
     public int count;
 
-    public OrderRepositoryTest() {
+    public OrderRepositorySample() {
         repository = new ArrayList<Order>();
         count = 0;
     }
@@ -27,6 +26,11 @@ public class OrderRepositoryTest implements OrderRepository{
     }
 
     @Override
+    public boolean updateOrder(Order order) {
+        return false;
+    }
+
+    @Override
     public List<Order> getAllOrders() {
         List<Order> copy = new ArrayList<Order>();
         for (Order order : repository) {
@@ -36,7 +40,7 @@ public class OrderRepositoryTest implements OrderRepository{
     }
 
     @Override
-    public Order getOrderById(int id) {
+    public Order getOrderById(Long id) {
         Order result = null;
         for (Order order : repository) {
             if (id == order.getId()) {

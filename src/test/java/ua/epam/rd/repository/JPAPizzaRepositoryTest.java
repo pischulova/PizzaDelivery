@@ -4,9 +4,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import ua.epam.rd.domain.Pizza;
 import ua.epam.rd.domain.PizzaType;
-import ua.epam.rd.repository.template.UTRepositoryTestsTemplate;
+import ua.epam.rd.template.UTRepositoryTestsTemplate;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertNotNull;
 
 public class JPAPizzaRepositoryTest extends UTRepositoryTestsTemplate {

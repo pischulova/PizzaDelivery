@@ -5,9 +5,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.epam.rd.domain.Order;
 import ua.epam.rd.domain.Pizza;
 import ua.epam.rd.service.OrderService;
-import ua.epam.rd.service.OrderServiceTest;
+import ua.epam.rd.service.OrderServiceSample;
 import ua.epam.rd.service.PizzaService;
-import ua.epam.rd.service.PizzaServiceTest;
+import ua.epam.rd.service.PizzaServiceSample;
 
 import java.util.List;
 
@@ -17,10 +17,10 @@ public class Application {
         ApplicationContext repositContext = new ClassPathXmlApplicationContext("RepositConfig.xml");
         ApplicationContext appContext = new ClassPathXmlApplicationContext(new String[]{"SpringConfig.xml"}, repositContext);
 
-        PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceTest.class);
+        PizzaService pizzaService = appContext.getBean("pizzaServiceTest", PizzaServiceSample.class);
         List<Pizza> pizzaList = pizzaService.getAllPizzas();
 
-        OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceTest.class);
+        OrderService orderService = appContext.getBean("orderServiceTest", OrderServiceSample.class);
 
 //        Order order1 = orderService.createNewOrder();
 //        order1.addItems(pizzaList.get(0), pizzaList.get(2));
