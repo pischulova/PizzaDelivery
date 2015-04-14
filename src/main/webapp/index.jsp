@@ -6,10 +6,10 @@
 <body>
 
 <h1>Hello World</h1>
-<form action="pages/pizza/add" method="post">
+<form action="pizza/add" method="post">
     Pizza name: <input type="text" name="name">
-    Pizza type: <input type="text" name="price">
-    Pizza price: <input type="text" name="pizzaType">
+    Pizza price: <input type="text" name="price">
+    Pizza type: <input type="text" name="pizzaType">
     <input type="submit" value="Add">
 </form>
 

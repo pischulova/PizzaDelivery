@@ -12,22 +12,23 @@ import ua.epam.rd.service.PizzaService;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "/pizza")
 public class PizzaController {
     @Autowired
     private PizzaService pizzaService;
 
-    @RequestMapping(value = "add", method = RequestMethod.POST)
+    @RequestMapping(value = "pizza/add", method = RequestMethod.POST)
     public String createPizza(@ModelAttribute Pizza pizza) {
         pizzaService.savePizza(pizza);
-        return "redirect:show_all";
+        System.out.println("add");
+        return "redirect:/pizza/show_all";
     }
 
-    @RequestMapping(value = "show_all", method = RequestMethod.GET)
+    @RequestMapping(value = "pizza/show_all", method = RequestMethod.GET)
     @ResponseBody
     public String show() {
         List<Pizza> pizzaList = pizzaService.getAllPizzas();
         StringBuilder sb = new StringBuilder();
+        System.out.println("show");
         for (Pizza pizza : pizzaList) {
             sb.append(pizza.toString()).append("\n");
         }
